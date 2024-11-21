@@ -13,7 +13,7 @@ const Saved = () => {
           `http://localhost:8000/recipes/save/${userId}`
         );
         setRecipes(response.data.savedRecipes);
-        // console.log(response.data);
+        console.log(response.data);
       } catch (error) {
         console.log(`error: ${error.message}`);
       }
